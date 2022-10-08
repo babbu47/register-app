@@ -1,8 +1,44 @@
 @import url('https://fonts.googleapis.com/css2?family=Alkalami&display=swap');
-.body{
+body{
     font-family: 'Alkalami', serif;
+    background-color:#F96167 ;
 }
 .container
 {
-    text-align: center;
+    
+    text-align:center;
 }
+#bill-amount{
+    height:1.8rem;
+    width:15rem;
+    border-radius: 0.5em;
+}
+#cash-given{
+
+    height:1.8rem;
+    width:15rem;
+    border-radius: 0.5em; 
+}
+#buto{
+    margin-top:1rem;
+    background-color: #FCE77D;
+    color: #36454F;
+    height:3rem;
+    width:5rem;
+   border-radius:0.5em;
+   border:solid black;
+   font-size:large;
+   cursor: pointer;
+}
+table{
+    border: solid #FCE77D;
+    margin:0 auto;
+}
+
+td,th{
+    border:1px solid #FCE77D;
+    width:4rem;
+}
+
+
+
