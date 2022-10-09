@@ -5,14 +5,25 @@ var texto=document.querySelector("#error");
 const note=[2000,500,100,20,10,5,1];
 var notesnum=document.querySelectorAll(".no-of-notes")
 
-checkbbutton.addEventListener("click",function validatebillamount(){
-    texto.style.display="none";
-if(billamount.value>0)
-{
-    if(cashamount.value>billamount.value)
-    {
 
-        const amountreturned =cashamount.value-billamount.value;
+function calculate(ar){
+for(let i=0;i<note.length;i++)
+{
+    {
+var noteesofeach=Math.trunc(ar/note[i]);
+    ar=ar%note[i];
+notesnum[i].innerText=noteesofeach;
+}
+
+}}
+checkbbutton.addEventListener("click",function validatebillamount()
+{
+    texto.style.display="none";
+  if(billamount.value>0)
+{ 
+    if(Number(cashamount.value)>Number(billamount.value))
+    {
+      const amountreturned=cashamount.value-billamount.value;
       calculate(amountreturned)
     }
     else{
@@ -27,10 +38,3 @@ texto.innerText="Invalid bill amount";
 
 }
 })
-function calculate(ar){
-for(let i=0;i<note.length;i++){
-var noteesofeach=Math.trunc(ar/note[i]);
-    ar=ar%note[i];
-notesnum[i].innerText=noteesofeach;
-}
-}
